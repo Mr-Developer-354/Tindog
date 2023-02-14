@@ -1,0 +1,223 @@
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    /* Multiple selectors to use same property on different classes. */
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    color: #8f8f8f;
+}
+
+/* --------------------------- Heading ------------------ */
+
+.big-heading {
+    font-family: 'Montserrat-black', sans-serif;
+    font-weight: 900;     /* Black size*/
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+.section-heading {
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+/* ----------- Containers --------------- */
+
+.container-fluid {
+    padding: 7% 15%;
+}
+
+/* color management sections */
+.colored-section {
+    background-color: #ff4c68;
+    color: #fff;     /* #fff is white color and #000 is black Color Font */
+}
+
+.white-section {
+    background-color: #fff;
+}
+
+
+
+/* ------------------------------------------------Navigation Bar----------------------------------------- */
+
+.navbar {
+    padding: 0 0 4.5rem;
+}
+
+/* .top-fixed {
+    position: fixed;
+} */
+
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.nav-item {
+    padding: 0 1.5px;
+}
+
+.nav-link {
+    font-size: 1rem;
+    font-family: "Montserrat";
+    font-weight: 700;
+}
+
+/* Download Button section */
+
+.download-button {
+    margin: 5% 3% 5% 0;
+}
+
+/* --- title section ----- */
+
+#title .container-fluid {
+    padding: 3% 15% 7%;
+    /* this rule is more specific then the simple container-fluid class selector */
+    text-align: left;
+
+}
+
+/* Title Image section */
+
+.title-image {
+    width: 20%;
+    transform: rotate(25deg);
+    position: absolute;
+    right: 25%;
+}
+
+@media (max-width: 1000px) {
+
+    #title {
+        text-align: center;
+        /* We should leave this text-align: center; here because this a special condition */
+    }
+
+    .title-image {
+        width: 60%;
+        position: static;
+        transform: rotate(0);
+    }
+    
+}
+
+/* ---------------------------------------------Features Section ----------------------------------------- */
+
+#features {
+    position: relative;
+    /* z-index: 1; */
+}
+
+.feature-box {
+    padding: 5%;
+}
+
+.feature-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.icon {
+    color: #ef8172;
+    margin-bottom: 1rem;
+}
+  
+.icon:hover {
+    color: #ff4c68;
+}
+
+
+
+
+/* -------------------------------------------- Testimonial Section --------------------------------------- */
+
+#testimonials {
+    background-color: #ef8172;
+}
+
+.testimonial-text {
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.testimonial-image {
+    width: 10%;
+    border-radius: 50%;   
+    margin: 20px;
+}
+
+/* Press Section */
+
+#press {
+    background-color: #ef8172;
+    padding-bottom: 3%;
+}
+
+.press-logo {
+    width: 14%;
+    margin: 20px 20px 50px;
+}
+
+
+
+/* -------------------------------------------- Pricing Section --------------------------------------- */
+
+#pricing {
+    padding: 7% 10%;
+}
+
+.pricing-column {
+    padding: 3% 2%;
+}
+
+.price-text {
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+
+
+/* -------------------------------------------- call to Action --------------------------------------- */
+
+/* #cta {
+    background-color: #ff4c68;
+    color: #fff; 
+
+    removed because we created a colored section class.
+} */
+
+/* 
+.cta-heading {
+    font-family: 'Montserrat-black', sans-serif;
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 1.5;
+
+    this class is reamoved because we used big-heading class in index file instead cta-heading. 
+    both have same protery.
+}
+
+*/
+
+
+
+
+/* -------------------------------------------- Footer --------------------------------------- */
+
+.social-icon {
+    margin: 0 2% 3%;
+}
+
+
